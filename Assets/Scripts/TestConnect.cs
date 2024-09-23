@@ -18,8 +18,8 @@ public class TestConnect: MonoBehaviourPunCallbacks
         print("Connected to server.");
         print(PhotonNetwork.LocalPlayer.NickName);
     }
-    public override void OnDisconnected(DisconnectCause Cause)
+    public override void OnDisconnected(DisconnectCause cause)
     {
-        print("Disconnected from server for reason" + Cause.ToString()) ;
+        print("Disconnected from server for reason" + cause.ToString()) ;
     }
 }

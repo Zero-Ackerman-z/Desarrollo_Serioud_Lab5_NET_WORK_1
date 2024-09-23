@@ -14,7 +14,7 @@ public class GameSettings : ScriptableObject
     {
         get
         {
-            int value = Random.Range(0, 999);
+            int value = Random.Range(0, 9999);
             return _nickName + value.ToString();
         }
     }
